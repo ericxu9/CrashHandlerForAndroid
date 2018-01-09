@@ -1,5 +1,7 @@
 ![UncaughtExceptionHandler](http://upload-images.jianshu.io/upload_images/1715317-db29a1034acda7bd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+###### 简书文章地址：[https://www.jianshu.com/u/3b7248821149](https://www.jianshu.com/u/3b7248821149)
+
 ###### 关于`UncaughtExceptionHandler`，它是Java Thread类中定义的一个接口；用于处理未捕获的异常导致线程的终止（`注意：catch了的是捕获不到的`），当我们的应用crash的时候，就会走`UncaughtExceptionHandler`的`uncaughtException`方法，在该方法中可以获取到异常的信息，我们通过`setDefaultUncaughtExceptionHandler`该方法来设置线程的默认异常处理器，将异常信息保存到本地或者是上传到服务器，方便我们快速的定位问题；下面是一个简单`CrashHandler`的代码：
 
 ``` java
